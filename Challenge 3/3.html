@@ -10,107 +10,107 @@
 </head>
 <body>
     <div class="container">
-        <div class="comments">
-            <div class="counter">
+        <article class="comments">
+            <button class="counter">
                 <img class="mtb-10 plus-sign" src="./images/icon-plus.svg">
                 <span class="mtb-10 count">12</span>
                 <img class="mtb-10 minus-sign" src="./images/icon-minus.svg">
-            </div>
-            <div class="comment-description">
-                <div class="comment-details">
+            </button>
+            <section class="comment-description">
+                <header class="comment-details">
                     <img class="user-image" src="./images/avatars/image-amyrobson.png" alt="user-name">
                     <div class="user-name">amyrobson</div>
                     <div class="comment-made">1 month ago</div>
-                    <a class="reply-comment">
+                    <button class="reply-comment">
                         <img src="./images/icon-reply.svg" alt="reply">
                         <span>Reply</span>
-                    </a>
-                </div>
-                <div class="comment-text">
+                    </button>
+                </header>
+                <p class="comment-text">
                     Impressive! Tough it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
-                </div>
-            </div>
-        </div>
-        <div class="comments">
-            <div class="counter">
+                </p>
+            </section>
+        </article>
+        <article class="comments">
+            <button class="counter">
                 <img class="mtb-10 plus-sign" src="./images/icon-plus.svg">
                 <span class="mtb-10 count">5</span>
                 <img class="mtb-10 minus-sign" src="./images/icon-minus.svg">
-            </div>
-            <div class="comment-description">
-                <div class="comment-details">
+            </button>
+            <section class="comment-description">
+                <header class="comment-details">
                     <img class="user-image" src="./images/avatars/image-maxblagun.png" alt="user-name">
                     <div class="user-name">maxblagun</div>
                     <div class="comment-made">2 weeks ago</div>
-                    <a class="reply-comment">
+                    <button class="reply-comment">
                         <img src="./images/icon-reply.svg" alt="reply">
                         <span>Reply</span>
-                    </a>
-                </div>
-                <div class="comment-text">
+                    </button>
+                </header>
+                <p class="comment-text">
                     Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-                </div>
-            </div>
-        </div>
-        <div class="comments-replies">
+                </p>
+            </section>
+        </article>
+        <section class="comments-replies">
             <div class="section-gap">
             </div>
             <div class="replies">
-                <div class="comments">
-                    <div class="counter">
+                <article class="comments">
+                    <button class="counter">
                         <img class="mtb-10 plus-sign" src="./images/icon-plus.svg">
                         <span class="mtb-10 count">4</span>
                         <img class="mtb-10 minus-sign" src="./images/icon-minus.svg">
-                    </div>
-                    <div class="comment-description">
-                        <div class="comment-details">
+                    </button>
+                    <section class="comment-description">
+                        <header class="comment-details">
                             <img class="user-image" src="./images/avatars/image-ramsesmiron.png" alt="user-name">
                             <div class="user-name">ramsesmiron</div>
                             <div class="comment-made">1 week ago</div>
-                            <a class="reply-comment">
+                            <button class="reply-comment">
                                 <img src="./images/icon-reply.svg" alt="reply">
                                 <span>Reply</span>
-                            </a>
-                        </div>
-                        <div class="comment-text">
+                            </button>
+                        </header>
+                        <p class="comment-text">
                             <span class="mention-user">@maxblagun</span> If you're still new. I'd recommend focusing on the fundamentals of HTML, CSS and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
-                        </div>
-                    </div>
-                </div>
-                <div class="comments">
-                    <div class="counter">
+                        </p>
+                    </section>
+                </article>
+                <article class="comments">
+                    <button class="counter">
                         <img class="mtb-10 plus-sign" src="./images/icon-plus.svg">
                         <span class="mtb-10 count">2</span>
                         <img class="mtb-10 minus-sign" src="./images/icon-minus.svg">
-                    </div>
-                    <div class="comment-description">
-                        <div class="comment-details">
+                    </button>
+                    <section class="comment-description">
+                        <header class="comment-details">
                             <img class="user-image" src="./images/avatars/image-juliusomo.png" alt="user-name">
                             <div class="user-name you">juliusomo</div>
                             <div class="comment-made">2 days ago</div>
                             <div class="comment-action">
-                                <a href="#" class="delete-comment">
+                                <button href="#" class="delete-comment">
                                     <img class="mr-4" src="./images/icon-delete.svg" alt="reply">
                                     <span>Delete</span>
-                                </a>
-                                <a href="#" class="edit-comment">
+                                </button>
+                                <button href="#" class="edit-comment">
                                     <img class="mr-4" src="./images/icon-edit.svg" alt="reply">
                                     <span>Edit</span>
-                                </a>
+                                </button>
                             </div>
-                        </div>
-                        <div class="comment-text">
+                        </header>
+                        <p class="comment-text">
                             <span class="mention-user">@ramsesmiron</span> I couldn't agree more with this. Everthing moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
-                        </div>
-                    </div>
-                </div>
+                        </p>
+                    </section>
+                </article>
             </div>
-        </div>
-        <div class="comments comment-section">
+        </section>
+        <article class="comments comment-section">
             <img class="user-image" src="./images/avatars/image-juliusomo.png" alt="user-name">
             <textarea name="" id="" class="comment-input" cols="80" rows="10" placeholder="Add a comment..."></textarea>
             <button class="send-button" type="submit">Send</button>
-        </div>
+        </article>
     </div>
 </body>
 </html>

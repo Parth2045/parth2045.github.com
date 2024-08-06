@@ -25,25 +25,37 @@ body {
     text-align: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    padding: 30px;
+    padding: 22px 31px;
     margin-bottom: 20px;
 }
 
 .counter {
     background-color: hsl(223, 19%, 93%);
     text-align: center;
-    padding: 5px;
+    padding: 8px 10px;
     border-radius: 10px;
+    border-style: none;
     height: 100%;
 }
 
 .mtb-10 {
-    margin:10px 0 ;
+    margin:22px 0;
+}
+
+.mtb-10.plus-sign {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.mtb-10.minus-sign {
+    margin-bottom: 0;
+    cursor: pointer;
 }
 
 span.count {
     color: hsl(238, 40%, 52%);
-    font-weight: 500;
+    font-weight: 900;
+    font-size: 15px;
 }
 
 .comment-description {
@@ -67,12 +79,12 @@ span.count {
 }
 
 .user-name.you::after {
-    content: " you";
+    content: "you";
     background-color: hsl(238, 40%, 52%);
     color: hsl(0, 0%, 100%);
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
-    padding: 3px 5px;
+    padding: 2px 5px;
     margin-left: 5px;
 }
 
@@ -94,6 +106,8 @@ span.count {
 }
 
 .reply-comment {
+    border: none;
+    background: none;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -108,7 +122,7 @@ span.count {
 }
 
 .comments-replies .section-gap {
-    border-left: 2px solid #d5d5f1;
+    border-left: 2px solid #dddddd;
     margin-left: 35px;
     padding-left: 35px;
     margin-bottom: 30px;
@@ -126,13 +140,25 @@ span.count {
 }
 
 .delete-comment {
+    display: flex;
+    gap: 5px;
+    border: none;
+    background: none;
     color: hsl(358, 79%, 66%);
-    font-weight: 500;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .edit-comment {
+    display: flex;
+    gap: 5px;
+    border: none;
+    background: none;
     color: hsl(238, 40%, 52%);
-    font-weight: 500;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .comment-section {
@@ -141,7 +167,7 @@ span.count {
 }
 
 .comment-section .comment-input {
-    height: 80px;
+    height: 95px;
     width: 85%;
     border-radius: 10px;
     border: 1px solid #d5d5f1;
@@ -154,8 +180,8 @@ span.count {
     border: none;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 14px;
-    padding: 12px 0;
+    font-size: 16px;
+    padding: 14px 0;
     background-color: hsl(238, 40%, 52%);
     color: hsl(0, 0%, 100%);
     transition: all 100ms;
