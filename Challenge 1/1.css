@@ -21,11 +21,12 @@ body {
 }
 
 .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     width: 700px;
-    height: auto;
     margin: 50px auto;
-    border-radius: 15px;
-    overflow: hidden;
 }
 
 .product {
